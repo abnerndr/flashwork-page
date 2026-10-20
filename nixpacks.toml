@@ -1,0 +1,12 @@
+# Dokploy: build type Nixpacks, porta da aplicação 3000.
+# O build estático do Next.js fica em out/ e o Caddy publica essa pasta.
+
+[variables]
+NIXPACKS_NODE_VERSION = "22"
+NODE_ENV = "production"
+
+[phases.setup]
+nixPkgs = ["...", "caddy"]
+
+[start]
+cmd = "caddy run --config /app/Caddyfile --adapter caddyfile"
