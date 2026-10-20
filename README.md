@@ -1,19 +1,25 @@
-# Flashwork landing page
+# Flashwork
 
-Next.js App Router + TypeScript. Página responsiva em português inspirada no hero 14 da referência do Figma, com a captura real fornecida do Flashwork.
+Site: [flashwork.ruperth.com](https://flashwork.ruperth.com)
 
-## Executar
+O Flashwork coloca as CLIs de IA no mesmo fluxo. Você cola a especificação, e o projeto monta sozinho o contexto e a orquestração para Claude Code, Codex e Antigravity trabalharem juntos.
+
+Cada projeto ganha RAG e harness automáticos. O conhecimento do código fica disponível durante a execução, sem remontar o contexto a cada conversa e sem coordenar cada CLI na mão. Menos tokens, menos espera, e a entrega continua saindo da spec.
+
+O aplicativo é open source: [github.com/abnerndr/flashwork](https://github.com/abnerndr/flashwork). Os instaladores de Windows, macOS e Linux saem das releases desse repositório. O site detecta o sistema e aponta para o arquivo correspondente.
+
+## Este repositório
+
+Aqui está a landing page, em Next.js (App Router) e TypeScript. O build é uma exportação estática.
 
 ```sh
 npm install
 npm run dev
 ```
 
-## Verificar e compilar
-
 ```sh
 npm run typecheck
 npm run build
 ```
 
-A exportação estática fica em `out/`. Os links do GitHub estão centralizados na constante `repo` em `app/page.tsx`. Os botões detectam Windows, macOS e Linux no navegador e apontam para os instaladores verificados da release 0.1.0. Em dispositivos móveis, exibem a lista de releases. Atualize os URLs em `app/download-platform.ts` ao publicar uma nova versão. O DMG atual é Intel x64; o Linux usa DEB x64 e oferece acesso às outras versões.
+O resultado fica em `out/`. No Dokploy, o build é Nixpacks e a aplicação escuta na porta 3000.
