@@ -2,6 +2,8 @@
 
 Site: [flashwork.ruperth.com](https://flashwork.ruperth.com)
 
+[![Landing do Flashwork](landing.jpg)](https://flashwork.ruperth.com)
+
 O Flashwork coloca as CLIs de IA no mesmo fluxo. Você cola a especificação, e o projeto monta sozinho o contexto e a orquestração para Claude Code, Codex e Antigravity trabalharem juntos.
 
 Cada projeto ganha RAG e harness automáticos. O conhecimento do código fica disponível durante a execução, sem remontar o contexto a cada conversa e sem coordenar cada CLI na mão. Menos tokens, menos espera, e a entrega continua saindo da spec.
