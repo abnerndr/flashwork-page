@@ -2,7 +2,7 @@
 import {useState, useRef, useEffect} from 'react';
 import {ArrowUpRight, ArrowRight, ArrowDown, Github, Zap, Terminal, Layers3, Workflow, Check, X, Maximize2, Code2} from 'lucide-react';
 import DownloadButton from './download-button';
-const repo = 'https://github.com/abnerndr/flashwork';
+import { repositoryUrl as repo } from './site-config';
 const steps = [
  {n:'01',title:'Cole sua spec.',text:'Descreva o que precisa ser construído. Sua especificação é o ponto de partida.',code:'> spec.md carregada',detail:'Uma direção clara para todos os agentes.'},
  {n:'02',title:'O contexto se conecta.',text:'O Flashwork cria uma camada de RAG e harness automaticamente em cada projeto.',code:'> contexto do projeto conectado',detail:'O conhecimento certo, disponível durante a execução.'},

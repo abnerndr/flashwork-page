@@ -23,3 +23,5 @@ npm run build
 ```
 
 O resultado fica em `out/`. No Dokploy, o build é Nixpacks e a aplicação escuta na porta 3000.
+
+Copie `.env.example` para `.env` para trocar o repositório e os instaladores de Windows, macOS e Linux. No Dokploy, defina essas variáveis antes do build.
